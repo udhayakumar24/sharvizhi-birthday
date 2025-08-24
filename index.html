@@ -49,7 +49,22 @@
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
-
+    /* Photo gallery */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
     /* Floating hearts animation */
     .floating-heart {
       position: fixed;
@@ -93,6 +108,11 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen>
   </iframe>
+
+  <h2>📸 A Special Memory</h2>
+  <div class="gallery">
+    <img src="photo1.png" alt="Our Memory">
+  </div>
 
   <div class="hearts">💛🤍💛🤍💛</div>
 
