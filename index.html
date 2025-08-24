@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Sharvizhi 💛🤍</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #fff7d6, #ffffff);
+      text-align: center;
+      padding: 20px;
+      color: #333;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #f4c542;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px auto;
+      max-width: 600px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      line-height: 1.6;
+    }
+    .hearts {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+    .song {
+      margin: 25px 0;
+    }
+    .song a {
+      text-decoration: none;
+      color: #f4c542;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    iframe {
+      margin-top: 20px;
+      width: 90%;
+      max-width: 600px;
+      height: 340px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Floating hearts animation */
+    .floating-heart {
+      position: fixed;
+      bottom: -50px;
+      font-size: 24px;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.7;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts">💛🤍💛🤍💛</div>
+  <h1>Happy Birthday Sharvizhi (Pattu) 🎉</h1>
+
+  <p>
+    Hey vizhiiiii, many more happy returns of the day and very happy birthday!  
+    May God Jesus keep you on top, bless you more, and give you whatever you want.  
+    Enjoy the moments of the day with your loved ones.  
+    And if time kedacha peslam not in chat, in call 😅...  
+    Unnoda voice ketu wish panna nalla irukum nu nenaikiren, your wish.  
+    Enjoy the day, go out, eat whatever you like 💛🤍
+  </p>
+
+  <div class="song">
+    🎶 Your Birthday Song:  
+    <a href="https://youtu.be/Qz9QhzOftHY?si=BnAceVsiCv6u6g9e" target="_blank">
+      Click here to listen
+    </a>
+  </div>
+
+  <h2>💌 A Special Video Just for You</h2>
+  <!-- Replace VIDEO_ID with your YouTube video ID -->
+  <iframe 
+    src="https://www.youtube.com/embed/VIDEO_ID" 
+    title="Birthday Video" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+
+  <div class="hearts">💛🤍💛🤍💛</div>
+
+  <script>
+    // Floating hearts generator
+    const hearts = ["💛","🤍"];
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("floating-heart");
+      heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (4 + Math.random() * 3) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 7000);
+    }
+    setInterval(createHeart, 800);
+  </script>
+</body>
+</html>
